@@ -1,7 +1,11 @@
 .PHONY: build
 .PHONY: docs
 
-BASEDIR = $(realpath .)
+BASEDIR  = $(realpath .)
+
+NPM     ?= npm
+BUNDLER ?= bundler
 
 install:
-	npm install $(BASEDIR)
+	$(NPM)	   install $(BASEDIR)
+	$(BUNDLER) install $(BASEDIR)
