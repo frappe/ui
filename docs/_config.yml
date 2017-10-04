@@ -1,5 +1,5 @@
 color:
-  primary: "##7575FF"
+  primary: "#7575FF"
 exclude:
   - Gemfile
   - Gemfile.lock
