@@ -1,2 +1,6 @@
 color:
   primary: "##7575FF"
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Makefile

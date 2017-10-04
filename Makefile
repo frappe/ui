@@ -4,8 +4,14 @@
 BASEDIR  = $(realpath .)
 
 NPM     ?= npm
-BUNDLER ?= bundler
+BUNDLE  ?= bundle
 
 install:
 	$(NPM)	   install $(BASEDIR)
-	$(BUNDLER) install $(BASEDIR)
+	$(BUNDLE) install
+
+docs:
+	cd docs && $(BUNDLE) install && make docs
+
+clean:
+	clear
